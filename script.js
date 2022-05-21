@@ -50,9 +50,12 @@ var promptLength = function() {
 
     //Re-prompt user for length of password
     promptLength();
-    
-  }
 
+  } else {
+
+    //Return the user answer
+    return userLengthInput;
+  }
 }
 
 //Add event listener to generate button
