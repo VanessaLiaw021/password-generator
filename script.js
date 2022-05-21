@@ -94,6 +94,16 @@ function generatePassword () {
     var specialCaseChoice = "!@#$%^&*()_-+={}[];:'`~<,>.?/|";
     var characters = lowerCaseChoice + upperCaseChoice + numberCaseChoice + specialCaseChoice;
     var generatedPassword = "";
+
+    //Call the function 
+    promptLength();
+    console.log(userLengthInput);
+
+    promptCharacters();
+    console.log(lowerCaseInput);
+    console.log(upperCaseInput);
+    console.log(numberCaseInput);
+    console.log(specialCaseInput);
 }
 
 //Add event listener to generate button
