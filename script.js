@@ -92,7 +92,7 @@ function generatePassword () {
     var upperCaseChoice = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var numberCaseChoice = "0123456789";
     var specialCaseChoice = "!@#$%^&*()_-+={}[];:'`~<,>.?/|";
-    var characters = lowerCaseChoice + upperCaseChoice + numberCaseChoice + specialCaseChoice;
+    var characters = "";
     var generatedPassword = "";
 
     //Call the function 
@@ -104,6 +104,14 @@ function generatePassword () {
     console.log(upperCaseInput);
     console.log(numberCaseInput);
     console.log(specialCaseInput);
+
+    //Store the user input an object
+    var results = {
+      lowerCaseResult: lowerCaseInput,
+      upperCaseResult: upperCaseInput,
+      numberCaseResult: numberCaseInput,
+      specialCaseResult: specialCaseInput
+    }
 }
 
 //Add event listener to generate button
