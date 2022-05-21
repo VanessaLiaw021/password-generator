@@ -113,22 +113,22 @@ function generatePassword () {
       specialCaseResult: specialCaseInput
     }
 
-    //Check to see if lowercase input is true, if it is, it will add it to characters
+    //Check to see if lowercase input is true, if it is, it will add it to characters variable
     if (results.lowerCaseResult) {
       characters += lowerCaseChoice;
     }
 
-    //Check to see if uppercase input is true, if it is, it will add it to characters
+    //Check to see if uppercase input is true, if it is, it will add it to characters variable
     if (results.upperCaseResult) {
       characters += upperCaseChoice;
     }
 
-    //Check to see if numbers input is true, if it is, it will add it to characters
+    //Check to see if numbers input is true, if it is, it will add it to characters variable
     if (results.numberCaseResult) {
       characters += numberCaseChoice;
     }
 
-    //Check to see if special input is true, if it is, it will add it to characters
+    //Check to see if special input is true, if it is, it will add it to characters variable
     if (results.specialCaseResult) {
       characters += specialCaseChoice;
     }
