@@ -84,5 +84,17 @@ var promptCharacters = function() {
   }
 }
 
+//Function that will generated a password based on user input
+function generatePassword () {
+
+    //Scope Variables 
+    var lowerCaseChoice = "abcdefghijklmnopqrstuvwxyz";
+    var upperCaseChoice = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var numberCaseChoice = "0123456789";
+    var specialCaseChoice = "!@#$%^&*()_-+={}[];:'`~<,>.?/|";
+    var characters = lowerCaseChoice + upperCaseChoice + numberCaseChoice + specialCaseChoice;
+    var generatedPassword = "";
+}
+
 //Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
