@@ -105,7 +105,7 @@ function generatePassword () {
     console.log(numberCaseInput);
     console.log(specialCaseInput);
 
-    //Store the user input an object
+    //Store the user input in an object
     var results = {
       lowerCaseResult: lowerCaseInput,
       upperCaseResult: upperCaseInput,
@@ -113,13 +113,35 @@ function generatePassword () {
       specialCaseResult: specialCaseInput
     }
 
+    //Check to see if lowercase input is true, if it is, it will add it to characters
+    if (results.lowerCaseResult) {
+      characters += lowerCaseChoice;
+    }
+
+    //Check to see if uppercase input is true, if it is, it will add it to characters
+    if (results.upperCaseResult) {
+      characters += upperCaseChoice;
+    }
+
+    //Check to see if numbers input is true, if it is, it will add it to characters
+    if (results.numberCaseResult) {
+      characters += numberCaseChoice;
+    }
+
+    //Check to see if special input is true, if it is, it will add it to characters
+    if (results.specialCaseResult) {
+      characters += specialCaseChoice;
+    }
+
+    console.log(characters);
+
     //For loop to generate a random password based on user inputs
     for (var i = 0; i < userLengthInput; i++) {
-      generatePassword += characters(Math.floor(Math.random() * characters.length));
+      generatedPassword += characters.charAt(Math.floor(Math.random() * characters.length));
     }
 
     //Return the randomly generated password
-    return generatePassword;
+    return generatedPassword;
 }
 
 //Add event listener to generate button
