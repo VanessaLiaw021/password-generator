@@ -112,6 +112,14 @@ function generatePassword () {
       numberCaseResult: numberCaseInput,
       specialCaseResult: specialCaseInput
     }
+
+    //For loop to generate a random password based on user inputs
+    for (var i = 0; i < userLengthInput; i++) {
+      generatePassword += characters(Math.floor(Math.random() * characters.length));
+    }
+
+    //Return the randomly generated password
+    return generatePassword;
 }
 
 //Add event listener to generate button
