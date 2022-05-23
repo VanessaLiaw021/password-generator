@@ -91,7 +91,7 @@ function generatePassword () {
     var lowerCaseChoice = "abcdefghijklmnopqrstuvwxyz";
     var upperCaseChoice = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var numberCaseChoice = "0123456789";
-    var specialCaseChoice = "!@#$%^&*()_-+={}[];:'`~<,>.?/|";
+    var specialCaseChoice = "#$%&()*+,-./:;<=>?";
     var characters = "";
     var generatedPassword = "";
 
