@@ -7,7 +7,7 @@ var numberCaseInput;
 var specialCaseInput;
 
 //Function expression to prompt user for lenght of password
-var promptLength = function() {
+function promptLength() {
 
   //Prompt user for length of password
   userLengthInput = parseInt(prompt("How long do you want your password?"));
@@ -45,7 +45,7 @@ var promptLength = function() {
 }
 
 //Function expression that confirm user choice for lower, upper, number, and special case characters
-var promptCharacters = function() {
+function promptCharacters() {
 
   //Confirm user for lower case letters
   lowerCaseInput = confirm("Click Ok if you want to include lowercase letter in your password");
