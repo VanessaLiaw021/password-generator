@@ -6,20 +6,6 @@ var upperCaseInput;
 var numberCaseInput;
 var specialCaseInput;
 
-
-// Write password to the #password input
-function writePassword() {
-
-  //Call function and stored the value in a variable
-  var password = generatePassword();
-
-  //Get the input text of where the password will be displayed at 
-  var passwordText = document.querySelector("#password");
-
-  //Get the value of the generated password and display it
-  passwordText.value = password;
-}
-
 //Function expression to prompt user for lenght of password
 var promptLength = function() {
 
@@ -136,6 +122,19 @@ function generatePassword () {
 
     //Return the randomly generated password
     return generatedPassword;
+}
+
+// Write password to the #password input
+function writePassword() {
+
+  //Call function and stored the value in a variable
+  var password = generatePassword();
+
+  //Get the input text of where the password will be displayed at 
+  var passwordText = document.querySelector("#password");
+
+  //Get the value of the generated password and display it
+  passwordText.value = password;
 }
 
 //Add event listener to generate button
