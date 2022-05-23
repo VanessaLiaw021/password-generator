@@ -95,15 +95,11 @@ function generatePassword () {
     var characters = "";
     var generatedPassword = "";
 
-    //Call the function 
+    //Call the function prompt length
     promptLength();
-    console.log(userLengthInput);
 
+    //Call the function prompt characters
     promptCharacters();
-    console.log(lowerCaseInput);
-    console.log(upperCaseInput);
-    console.log(numberCaseInput);
-    console.log(specialCaseInput);
 
     //Store the user input in an object
     var results = {
@@ -132,8 +128,6 @@ function generatePassword () {
     if (results.specialCaseResult) {
       characters += specialCaseChoice;
     }
-
-    console.log(characters);
 
     //For loop to generate a random password based on user inputs
     for (var i = 0; i < userLengthInput; i++) {
