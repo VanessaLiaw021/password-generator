@@ -13,7 +13,7 @@ function promptLength() {
   userLengthInput = parseInt(prompt("How long do you want your password?"));
 
   //Validate the user input
-  if (userLengthInput === "") {
+  if (!userLengthInput) {
     
     //Alert message to user to enter a number
     alert("Please enter a number");
