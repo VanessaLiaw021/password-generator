@@ -24,7 +24,8 @@ function writePassword() {
 var promptLength = function() {
 
   //Prompt user for length of password
-  userLengthInput = prompt("How long do you want your password?");
+  userLengthInput = parseInt(prompt("How long do you want your password?"));
+  console.log(userLengthInput);
 
   //Validate the user input
   if (userLengthInput === "") {
